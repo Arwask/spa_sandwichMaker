@@ -1,0 +1,10 @@
+{
+	"cheese":
+	[{
+		"mozzarella": 1.00,
+		"american": 0.90,
+		"pepper jack": 0.80,
+		"feta": 0.70,
+		"low fat": 0.85
+	}]
+}
