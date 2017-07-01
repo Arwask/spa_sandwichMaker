@@ -1,10 +1,10 @@
 {
 	"veggies":
-	{
+	[{
 		"onion": 1.00,
 		"tomato": 0.90,
 		"lettuce": 0.80,
 		"cucumber": 0.70,
 		"bell pepper": 0.85
-	}
+	}]
 }

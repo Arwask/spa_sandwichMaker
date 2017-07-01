@@ -1,10 +1,10 @@
 {
-	"condimentss":
-	{
+	"condiments":
+	[{
 		"ketchup": 0.10,
 		"mayo": 0.90,
 		"pesto": 0.80,
 		"honey mustard": 0.70,
 		"guacamole": 0.85
-	}
+	}]
 }
