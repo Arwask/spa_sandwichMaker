@@ -2,23 +2,18 @@
 var SandwichMaker = (function(maker) {
 
   // Private variable to store the different meat prices
-  var condimentPrices = [];
-	var req = new XMLHttpRequest();
-	maker.loadCondiments = function()
-	{
-		req.open("GET", "Data/condiments.json");
-		req.send();
-		req.addEventListener('load', function()
-		{
-			var data = JSON.parse(event.target.responseText).condiments[0];
-			maker.loadCheese();
-		})
-	}
-	
-  // Augment the original object with another method
+  var condimentPrices = {
+  	"Condiments" :
+  	{
+		"ketchup": 0.10,
+		"mayo": 0.90,
+		"pesto": 0.80,
+		"honey mustard": 0.70,
+		"guacamole": 0.85
+		}
+	};
   maker.addCondiments = function() {
     return condimentPrices;
   };
-  // Return the new, augmented object with the new method on it
   return maker;
 })(SandwichMaker || {});

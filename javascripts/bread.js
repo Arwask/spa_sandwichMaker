@@ -2,19 +2,17 @@
 var SandwichMaker = (function(maker) {
 
   // Private variable to store the different meat prices
-  var breadPrices = [];
-	var req = new XMLHttpRequest();
-	maker.loadBread = function()
-	{
-		req.open("GET", "Data/bread.json");
-		req.send();
-		req.addEventListener('load', function()
-		{
-			var data = JSON.parse(event.target.responseText).bread[0];
-			maker.logIt();
-		})
-	}
-  // Augment the original object with another method
+  var breadPrices = {
+  	"Bread":
+  		{
+		"white": 0.90,
+		"wheat": 0.95,
+		"multigrain": 1.80,
+		"french": 1.10,
+		"raagi": 1.35
+		}
+	};
+	
   maker.addBread = function() {
     return breadPrices;
   };
